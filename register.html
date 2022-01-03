@@ -159,8 +159,8 @@
   $('#gscript').ready(function () {
     $('#loading-wrapper').css('display', 'none');
   });
-  $('#gscript').load(function () {
-    $('#loading-wrapper').css('display', 'none');
+  $('#gscript').on('load', function(){
+      $('#loading-wrapper').css('display', 'none');
   });
 </script>
 </html>
